@@ -263,7 +263,7 @@ class CI_Security {
 	{
 		//show_error('The action you have requested is not allowed.');
 		/**
-		* CI heck for refreshing form(page) when csrf token expires to renew it.
+		* CI hack for refreshing form(page) when csrf token expires to renew it.
 		* ravi
 		*/
 		echo "<script>
