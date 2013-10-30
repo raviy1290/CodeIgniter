@@ -261,7 +261,15 @@ class CI_Security {
 	 */
 	public function csrf_show_error()
 	{
-		show_error('The action you have requested is not allowed.');
+		//show_error('The action you have requested is not allowed.');
+		/**
+		* CI heck for refreshing form(page) when csrf token expires to renew it.
+		* ravi
+		*/
+		echo "<script>
+				alert('CSRF expired, reload');
+				top.location.href=top.location.href;
+			</script>";
 	}
 
 	// --------------------------------------------------------------------
